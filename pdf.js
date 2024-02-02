@@ -21,18 +21,18 @@
  */
 
 (function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define("pdfjs-dist/build/pdf", [], factory);
-	else if(typeof exports === 'object')
-		exports["pdfjs-dist/build/pdf"] = factory();
-	else
-		root["pdfjs-dist/build/pdf"] = root.pdfjsLib = factory();
+  if(typeof exports === 'object' && typeof module === 'object')
+    module.exports = factory();
+  else if(typeof define === 'function' && define.amd)
+    define("pdfjs-dist/build/pdf", [], factory);
+  else if(typeof exports === 'object')
+    exports["pdfjs-dist/build/pdf"] = factory();
+  else
+    root["pdfjs-dist/build/pdf"] = root.pdfjsLib = factory();
 })(this, function() {
 return /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ([
+/******/  "use strict";
+/******/  var __webpack_modules__ = ([
 /* 0 */,
 /* 1 */
 /***/ ((__unused_webpack_module, exports, __w_pdfjs_require__) => {
@@ -58,7 +58,7 @@ var _util = __w_pdfjs_require__(2);
 var _base_factory = __w_pdfjs_require__(5);
 
 const DEFAULT_LINK_REL = "noopener noreferrer nofollow";
-
+exports.DEFAULT_LINK_REL = DEFAULT_LINK_REL;
 const SVG_NS = "http://www.w3.org/2000/svg";
 
 class DOMCanvasFactory extends _base_factory.BaseCanvasFactory {
@@ -14537,32 +14537,32 @@ class PDFFetchStreamRangeReader {
 }
 
 /***/ })
-/******/ 	]);
+/******/  ]);
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __w_pdfjs_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __w_pdfjs_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
+/******/  // The module cache
+/******/  var __webpack_module_cache__ = {};
+/******/  
+/******/  // The require function
+/******/  function __w_pdfjs_require__(moduleId) {
+/******/    // Check if module is in cache
+/******/    var cachedModule = __webpack_module_cache__[moduleId];
+/******/    if (cachedModule !== undefined) {
+/******/      return cachedModule.exports;
+/******/    }
+/******/    // Create a new module (and put it into the cache)
+/******/    var module = __webpack_module_cache__[moduleId] = {
+/******/      // no module.id needed
+/******/      // no module.loaded needed
+/******/      exports: {}
+/******/    };
+/******/  
+/******/    // Execute the module function
+/******/    __webpack_modules__[moduleId](module, module.exports, __w_pdfjs_require__);
+/******/  
+/******/    // Return the exports of the module
+/******/    return module.exports;
+/******/  }
+/******/  
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
@@ -14833,7 +14833,7 @@ const pdfjsBuild = '156762c48';
 }
 })();
 
-/******/ 	return __webpack_exports__;
+/******/  return __webpack_exports__;
 /******/ })()
 ;
 });

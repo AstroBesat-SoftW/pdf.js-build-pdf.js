@@ -58,7 +58,7 @@ var _util = __w_pdfjs_require__(2);
 var _base_factory = __w_pdfjs_require__(5);
 
 const DEFAULT_LINK_REL = "noopener noreferrer nofollow";
-exports.DEFAULT_LINK_REL = DEFAULT_LINK_REL;
+
 const SVG_NS = "http://www.w3.org/2000/svg";
 
 class DOMCanvasFactory extends _base_factory.BaseCanvasFactory {
